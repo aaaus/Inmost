@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BC5F7A1250A48A000C0F14D /* FiltersCoctailNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5F7A0250A48A000C0F14D /* FiltersCoctailNetworkService.swift */; };
+		2BC5F7A3250A4A1E00C0F14D /* GetCocktailFiltersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5F7A2250A4A1E00C0F14D /* GetCocktailFiltersResponse.swift */; };
+		2BC5F7A5250A4AFB00C0F14D /* CocktailFiltersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5F7A4250A4AFB00C0F14D /* CocktailFiltersData.swift */; };
+		2BC5F7A7250A512D00C0F14D /* CocktailFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5F7A6250A512D00C0F14D /* CocktailFiltersViewController.swift */; };
+		2BC5F7A9250A51CB00C0F14D /* CoctailFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5F7A8250A51CB00C0F14D /* CoctailFilterCell.swift */; };
 		2BD2ECF92506363800CE7DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2ECF82506363800CE7DB3 /* AppDelegate.swift */; };
 		2BD2ECFB2506363800CE7DB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2ECFA2506363800CE7DB3 /* SceneDelegate.swift */; };
 		2BD2ECFD2506363800CE7DB3 /* CocktailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2ECFC2506363800CE7DB3 /* CocktailViewController.swift */; };
@@ -22,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BC5F7A0250A48A000C0F14D /* FiltersCoctailNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersCoctailNetworkService.swift; sourceTree = "<group>"; };
+		2BC5F7A2250A4A1E00C0F14D /* GetCocktailFiltersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCocktailFiltersResponse.swift; sourceTree = "<group>"; };
+		2BC5F7A4250A4AFB00C0F14D /* CocktailFiltersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailFiltersData.swift; sourceTree = "<group>"; };
+		2BC5F7A6250A512D00C0F14D /* CocktailFiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailFiltersViewController.swift; sourceTree = "<group>"; };
+		2BC5F7A8250A51CB00C0F14D /* CoctailFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailFilterCell.swift; sourceTree = "<group>"; };
 		2BD2ECF52506363800CE7DB3 /* Inmost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inmost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD2ECF82506363800CE7DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD2ECFA2506363800CE7DB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD2ED1725066D0300CE7DB3 /* CocktailData.swift */,
+				2BC5F7A4250A4AFB00C0F14D /* CocktailFiltersData.swift */,
 				2BD2ED2125067C0D00CE7DB3 /* Responses */,
 			);
 			path = Model;
@@ -136,7 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				2BD2ECFC2506363800CE7DB3 /* CocktailViewController.swift */,
+				2BC5F7A6250A512D00C0F14D /* CocktailFiltersViewController.swift */,
 				2BD2ED152506556800CE7DB3 /* CocktailCell.swift */,
+				2BC5F7A8250A51CB00C0F14D /* CoctailFilterCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD2ED1D2506780200CE7DB3 /* CocktailNetworkService.swift */,
+				2BC5F7A0250A48A000C0F14D /* FiltersCoctailNetworkService.swift */,
 			);
 			path = CocktailNetworkService;
 			sourceTree = "<group>";
@@ -177,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD2ED1F25067B9800CE7DB3 /* GetCocktailResponse.swift */,
+				2BC5F7A2250A4A1E00C0F14D /* GetCocktailFiltersResponse.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -253,12 +268,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD2ED1E2506780200CE7DB3 /* CocktailNetworkService.swift in Sources */,
+				2BC5F7A9250A51CB00C0F14D /* CoctailFilterCell.swift in Sources */,
 				2BD2ECFD2506363800CE7DB3 /* CocktailViewController.swift in Sources */,
+				2BC5F7A1250A48A000C0F14D /* FiltersCoctailNetworkService.swift in Sources */,
 				2BD2ECF92506363800CE7DB3 /* AppDelegate.swift in Sources */,
+				2BC5F7A3250A4A1E00C0F14D /* GetCocktailFiltersResponse.swift in Sources */,
 				2BD2ECFB2506363800CE7DB3 /* SceneDelegate.swift in Sources */,
 				2BD2ED162506556800CE7DB3 /* CocktailCell.swift in Sources */,
 				2BD2ED2025067B9800CE7DB3 /* GetCocktailResponse.swift in Sources */,
 				2BD2ED2425067CFA00CE7DB3 /* NetworkError.swift in Sources */,
+				2BC5F7A5250A4AFB00C0F14D /* CocktailFiltersData.swift in Sources */,
+				2BC5F7A7250A512D00C0F14D /* CocktailFiltersViewController.swift in Sources */,
 				2BD2ED1B250671D200CE7DB3 /* NetworkService.swift in Sources */,
 				2BD2ED1825066D0300CE7DB3 /* CocktailData.swift in Sources */,
 			);

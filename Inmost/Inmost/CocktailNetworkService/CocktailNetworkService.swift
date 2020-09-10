@@ -9,19 +9,23 @@
 import Foundation
 
 class CocktailNetworkService {
+    
     private init() {}
     
     static func getCocktails(completion: @escaping(GetCocktailResponse) -> ()) {
-        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1/comments") else {return}
         
+        let cleanString = CocktailData.cocktailHeaderCategoryText.replacingOccurrences(of: " ", with: "_", options: .literal, range: nil)
+        
+        guard let url = URL(string: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=" + cleanString) else {return}
         NetworkService.shared.getData(url: url) { (json) in
             do {
                 let response = try GetCocktailResponse(json: json)
+                // print(response)
                 completion(response)
             } catch {
                 print(error)
             }
         }
-
+        
     }
 }
